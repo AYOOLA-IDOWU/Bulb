@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON AND OFF BULB</title>
+</head>
+<body>
+<center>
+    <img src="./image/bulb-off.png" alt="bulb" id="show" style="width: 200px; height: 200px;"> <br> <br>
+    <button onclick="on()">CLICK TO ON</button>
+    <button onclick="off()">CLICK TO OFF</button>
+
+</center>
+    <script>
+        const show = document.getElementById('show');
+        const onImage = new Image();
+        const offImage = new Image();
+
+        onImage.src = "./image/onbulb.jpg";
+        offImage.src = "./image/bulb-off.png";
+
+        const on = () => {
+            show.src = onImage.src;
+        }
+
+        const off = () => {
+            show.src = offImage.src;
+        }
+    </script>
+</body>
+</html>
